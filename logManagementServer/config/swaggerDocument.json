@@ -1,0 +1,253 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Log Management",
+    "description": "Log Management Documentation For Admin",
+    "version": "1.0"
+  },
+  "produces": [
+    "application/json"
+  ],
+  "host": "localhost:3000",
+  "basePath": "",
+  "paths": {
+    "/loginAdmin": {
+      "post": {
+        "x-swagger-router-controller": "middleware-name1",
+        "operationId": "login",
+        "tags": [
+          "Admin"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "formData",
+            "description": "email is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "password",
+            "in": "formData",
+            "description": "password is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/addServer": {
+      "post": {
+        "x-swagger-router-controller": "middleware-name1",
+        "operationId": "addServer",
+        "tags": [
+          "Admin"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "description": "authorization is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "name is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "uid",
+            "in": "formData",
+            "description": "uid is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/enableOrDisableAccess": {
+      "post": {
+        "x-swagger-router-controller": "middleware-name1",
+        "operationId": "enableOrDisableAccess",
+        "tags": [
+          "Admin"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "description": "authorization is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "apiKey",
+            "in": "formData",
+            "description": "apiKey is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "provideAccess",
+            "in": "formData",
+            "description": "provideAccess is required",
+            "required": true,
+            "type": "string",
+            "value": "true"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/getLogs": {
+      "get": {
+        "x-swagger-router-controller": "middleware-name1",
+        "operationId": "login",
+        "tags": [
+          "Admin"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "apiKey",
+            "in": "query",
+            "description": "apiKey is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "description": "from date",
+            "type": "number",
+            "value": ""
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "to date",
+            "type": "number",
+            "value": ""
+          }
+        ],
+        "responses": {}
+      }
+    },
+     "/sendLog": {
+      "post": {
+        "x-swagger-router-controller": "middleware-name1",
+        "operationId": "sendLog",
+        "tags": [
+          "Server"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "apiKey",
+            "in": "formData",
+            "description": "apiKey is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "time",
+            "in": "formData",
+            "description": "time is required",
+            "required": true,
+            "type": "number",
+            "value": ""
+          },
+          {
+            "name": "method",
+            "in": "formData",
+            "description": "method is required",
+            "required": true,
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "fromIP",
+            "in": "formData",
+            "description": "fromIP",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "responseData",
+            "in": "formData",
+            "description": "responseData",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "requestData",
+            "in": "formData",
+            "description": "requestData",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "referer",
+            "in": "formData",
+            "description": "referer",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "userAgent",
+            "in": "formData",
+            "description": "userAgent",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "statusCode",
+            "in": "formData",
+            "description": "statusCode",
+            "type": "number",
+            "value": ""
+          },
+          {
+            "name": "status",
+            "in": "formData",
+            "description": "userAgent",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "path",
+            "in": "formData",
+            "description": "path",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "name": "host",
+            "in": "formData",
+            "description": "host",
+            "type": "string",
+            "value": ""
+          }
+        ],
+        "responses": {}
+      }
+    }
+  }
+}
