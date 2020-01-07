@@ -34,7 +34,7 @@ Futher Steps: 1) Creating npm module for this middleware
               2) Securing admin passwords and server information using bcrypt sale instead of MD5
               3) MongoDB aggregation framework for various filters while fetching logs
               4) Achieveing scalability using load balancing 
-              5) More extension of the logManagementServer application by maybe using ELK stack.
+              5) More extension of the logManagementServer application by using ELK stack in future.
               6) Effectively transfer messages without delay from publisher to subscriber using like messaging queues like kafka etc messaging queues.
           
 
