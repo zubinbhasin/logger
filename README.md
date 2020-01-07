@@ -24,7 +24,7 @@ Steps to Start Log Management Server :-
 
 Fetching logs :-
 
-**just enter the apiKey, and from and to date in milliseconds in the /getLogs GET endpoint (can be found in the swagger file) and send the parameters in query you will view all the logs**
+just enter the apiKey, and from and to date in milliseconds in the /getLogs GET endpoint (can be found in the swagger file) and send the parameters in query to view all the logs
 
 Business Problem: Creating a plugin which can be added to many product servers and sends logs to only one common server and that can easilyt fetching logs on based of time and permission.
 
