@@ -1,7 +1,7 @@
 # logger
 Server Log Management System 
 
-**Note that we need to add the logger middleware present in the productServer as a plugin in any project so as to capture the logs of all APIs without using any 3rd parth npm module**
+**Note that we need to add the logger middleware present in the productServer as a plugin in any project so as to capture the logs of all APIs without using any 3rd party npm module**
 **Note adding the LOGGER_URL i.e sendLog API endpoint and the LOGGER_KEY i.e apiKey in the config i.e .evn file of any productServer**
 
 Steps to Start Log Management Server :-
